@@ -5,7 +5,7 @@ class TestCredentials(unittest.TestCase):
     """Test class that defines test cases for the Credentials class behavior
     """
 
-     def setUp(self):
+    def setUp(self):
         """Set up method to run befor before each test case"""
         self.new_credentials = Credentials("Facebook", "12345")
 
@@ -46,3 +46,5 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(Credentials.display_credentials(), Credentials.credentials_list)
 
 
+if __name__ == '__main__':
+    unittest.main()
